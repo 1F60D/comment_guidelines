@@ -1,0 +1,59 @@
+/* Copyright (c) 1F60D <https://www.1F60D.com> */ 
+
+/**
+ * @file    comment_example.scss 
+ * @version 1.0 
+ * @date    2018-10-05 
+ * @author  Seungjin Bang (sjbang@1f60d.com)  
+ */ 
+
+ /** 
+  * @variables 
+  *  $width px 가로 길이 GLOBAL  
+  */
+
+ $width: 960px;
+
+
+ /** @property Header 헤더 속성 */ 
+ header {
+   width: $width;
+   margin: 0 auto;
+ }
+ 
+  /** @property #main 메인 속성 */ 
+ #main {
+
+   /** 
+    * @variables 
+    *  $width color 메인 element 색상   
+    */
+
+   $color: #333; 
+   width: $width;
+   margin: 20px auto;
+
+   /** @property #main > section 세부 설명 */ 
+   section {
+    
+     /** @property #main > section > p 섹션 내 문단 */ 
+     p {
+       color: $color;
+ 
+       /** @property #main > section > p > a:link 섹션 내 문단 내 색상 */ 
+       a:link {
+         color: $color;
+       }
+     }
+   }
+ }
+ 
+ /** @property footer 푸터 **/ 
+ footer {
+   width: $width;
+   margin: 0 auto;
+   color: $color;
+ }
+ 
+ 
+ 
